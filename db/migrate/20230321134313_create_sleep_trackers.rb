@@ -1,3 +1,4 @@
+# Migration for SleepTracker
 class CreateSleepTrackers < ActiveRecord::Migration[7.0]
   def change
     create_table :sleep_trackers do |t|

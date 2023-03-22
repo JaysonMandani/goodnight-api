@@ -1,3 +1,7 @@
+# This controller handles the creation of the user
+# using the show method it render all the data
+# for user and sleep_trackers
+
 class Api::V1::UsersController < ApplicationController
   def create
     @user = User.new(user_params)

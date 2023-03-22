@@ -1,3 +1,4 @@
+# This model handle the clock_in and clock_out
 class SleepTracker < ApplicationRecord
   belongs_to :user
 

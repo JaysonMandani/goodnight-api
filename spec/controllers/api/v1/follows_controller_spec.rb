@@ -1,3 +1,4 @@
+# Specs for Follows controller
 require 'rails_helper'
 
 RSpec.describe "Api::V1::FollowsController", type: :request do

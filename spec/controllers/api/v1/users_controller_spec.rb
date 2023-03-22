@@ -1,3 +1,4 @@
+# Specs for Users controller
 require 'rails_helper'
 
 RSpec.describe "Api::V1::UsersController", type: :request do

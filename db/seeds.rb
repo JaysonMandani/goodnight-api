@@ -1,3 +1,4 @@
+# Create seeds for test data
 # User
 User.create!(name: "Sample User")
 

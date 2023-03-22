@@ -1,3 +1,5 @@
+# This model handles the associations for followers
+# and sleep_trackers
 class User < ApplicationRecord
   has_many :sleep_trackers
   has_many :active_follows, foreign_key: :follower_id,
@@ -23,6 +25,7 @@ class User < ApplicationRecord
     following.include?(other_user)
   end
 
+  # It returns the from 1 week ago based on the requirement
   def last_week_sleep_tracks
     sleep_trackers.where("created_at >= ? AND created_at <= ?", 1.week.ago, Time.now)
                   .where.not(duration: nil)

@@ -1,3 +1,4 @@
+# Migration for CreateFollows
 class CreateFollows < ActiveRecord::Migration[7.0]
   def change
     create_table :follows do |t|
