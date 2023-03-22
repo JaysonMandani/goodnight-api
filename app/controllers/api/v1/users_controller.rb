@@ -19,28 +19,6 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-  def follow
-    @user = User.find(params[:id])
-
-    if @user.present?
-      current_user.follow(@user)
-      render json: @user, status: :ok
-    else
-      render json: { error: "User not found!" }, status: :bad_request
-    end
-  end
-
-  def unfollow
-    @user = User.find(params[:id])
-
-    if @user.present?
-      current_user.unfollow(@user)
-      render json: @user, status: :ok
-    else
-      render json: { error: "User not found!" }, status: :bad_request
-    end
-  end
-
   def user_params
     params.require(:user).permit(:id, :name)
   end
