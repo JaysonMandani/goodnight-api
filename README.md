@@ -1,24 +1,21 @@
-# README
+# Goodnight API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Clock In operation, and return all clocked-in times, ordered by created time.
+2. Users can follow and unfollow other users.
+3. See the sleep records over the past week for their friends, ordered by the
+   length of their sleep.
 
-Things you may want to cover:
 
-* Ruby version
+# Models
 
-* System dependencies
+* User
+* SleepTracker
+* Follow
 
-* Configuration
+# Gems
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* active_model_serializers
+* rspec-rails
+* faker
+* factory_bot_rails
+* pg
